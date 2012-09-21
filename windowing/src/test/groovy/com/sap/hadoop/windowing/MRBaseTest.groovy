@@ -3,6 +3,8 @@ package com.sap.hadoop.windowing;
 import static org.junit.Assert.*;
 
 import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.regex.Pattern;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -12,22 +14,38 @@ import org.apache.hadoop.hive.conf.HiveConf;
 import com.sap.hadoop.windowing.runtime.mr.MRTranslator;
 import com.sap.hadoop.windowing.runtime.mr.MRExecutor;
 import com.sap.hadoop.windowing.runtime.Mode;
+import com.sap.hadoop.windowing.runtime.QueryOutputPrinter;
 import com.sap.hadoop.windowing.runtime.TestExecutor;
 import com.sap.hadoop.windowing.runtime.ThriftBasedHiveQueryExecutor;
 import com.sap.hadoop.windowing.runtime.WindowingShell;
+
+class CommandLog extends QueryOutputPrinter
+{
+	PrintStream out;
+	protected printOutput(String s) { out.println(s)}
+}
 
 abstract class MRBaseTest
 {
 	static WindowingShell wshell;
 	static basedir = "src/test/groovy"
 	static ByteArrayOutputStream outStream;
+
+	//test validation constants
+
+	public static final String TEST_GIT_PATH = "c:/git/"
+	public static final String TEST_DATA_PATH = "SQLWindowing/windowing/src/test/groovy/testOutput"
+	public static final String TEST_DIFF_EXE = "c:/cygwin/bin/diff.exe " 
+	
+	static refDir = TEST_GIT_PATH+ TEST_DATA_PATH + "ref/"
+	static tempDir = TEST_GIT_PATH+ TEST_DATA_PATH + "out/"
 	
 	@BeforeClass
 	public static void setupClass()
 	{
 		outStream = new ByteArrayOutputStream()
 		
-		Configuration conf = HOME();
+		Configuration conf =  WORK_LOCALMR();
 		conf.setBoolean(Constants.WINDOWING_TEST_MODE, true)
 		HiveConf hCfg = new HiveConf(conf, conf.getClass())
 		
@@ -41,7 +59,35 @@ abstract class MRBaseTest
 	{
 		outStream.reset();
 	}
-	
+
+	def  testExecute(String methName, String command) // e.g. testExecute("testRC",query_string)
+	{
+		// always spit out diff on sys output
+		// throw assert exception 
+
+		//find the name of the file to be written to
+		//should find the name of the derived class from where this method is invoked.
+		def Collection pathParts = this.class.name.split(/\./) 
+		def cname = pathParts[pathParts.size() -1] //Get only the class name > E.g. MRTest
+
+		def clName = tempDir+  "/" + cname + "_"+ methName + ".out" //Output file name > E.g. C:\git\SQLWindowing\windowing\src\test\groovy\data\testOutputTemp\MRTest_testRC
+		def  clFile = new File(clName)
+		def cqop = new CommandLog(out: new PrintStream(clFile)) // create the output file
+		wshell.execute(command, cqop)
+
+		def sp = " "
+		def cmd = TEST_DIFF_EXE
+		def cl = cmd + (refDir+clName) + sp + (tempDir + clName)
+		def sout = new StringBuffer()
+		def serr = new StringBuffer()
+		def proc = cl.execute()
+		proc.consumeProcessOutput(sout, serr)
+		proc.waitForOrKill(1000) //TODO: Tune the wait time for large files
+		// print only if the output buffer is non-empty or not-null
+		if(sout) println sout // TODO: Throw assert exception
+	}
+
+		
 	public static Configuration WORK()
 	{
 		Configuration conf = new Configuration();
@@ -51,13 +97,14 @@ abstract class MRBaseTest
 		conf.set("hive.metastore.uris", "thrift://hbserver7.dhcp.pal.sap.corp:9083");
 		//conf.set("hive.metastore.uris", "thrift://localhost:9083");
 		conf.set("hive.metastore.local", "false");
-		conf.set("windowing.jar.file", "e:/windowing/windowing/target/com.sap.hadoop.windowing-0.0.2-SNAPSHOT.jar");
+		conf.set("windowing.jar.file", "C:/git/SQLWindowing/windowing/target/com.sap.hadoop.windowing-0.0.2-SNAPSHOT.jar");
 		conf.set(" mapred.reduce.tasks", "8");
 		
 		conf.set(Constants.HIVE_THRIFTSERVER, "hbserver7.dhcp.pal.sap.corp")
 		conf.setInt(Constants.HIVE_THRIFTSERVER_PORT, 10000)
 		
-		conf.set("HIVE_HOME", "e:/hadoop/hive2/hive/build/dist")
+		conf.set("HIVE_HOME", "C:/hive-0.9.0")
+		//conf.set("HIVE_HOME", "C:/git/hive/bin/hive-0.9.0-bin")
 		
 		conf.set("hadoop.job.ugi", "hbutani,users");
 		
@@ -123,12 +170,14 @@ abstract class MRBaseTest
 		conf.set("hive.metastore.uris", "thrift://hbserver7.dhcp.pal.sap.corp:9083");
 		//conf.set("hive.metastore.uris", "thrift://localhost:9083");
 		conf.set("hive.metastore.local", "false");
-		conf.set("windowing.jar.file", "e:/windowing/windowing/target/com.sap.hadoop.windowing-0.0.2-SNAPSHOT.jar");
+		conf.set("windowing.jar.file", "C:/git/SQLWindowing/windowing/target/com.sap.hadoop.windowing-0.0.2-SNAPSHOT.jar");
 		
 		conf.set(Constants.HIVE_THRIFTSERVER, "hbserver7.dhcp.pal.sap.corp")
 		conf.setInt(Constants.HIVE_THRIFTSERVER_PORT, 10000)
-		conf.set("HIVE_HOME", "e:/hadoop/hive2/hive/build/dist")
+		conf.set("HIVE_HOME", "C:/git/hive/bin/hive-0.9.0-bin")
 		
 		return conf;
 	}
+	
 }
+

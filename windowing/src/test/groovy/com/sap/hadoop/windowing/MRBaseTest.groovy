@@ -6,6 +6,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.regex.Pattern;
 
+import junit.framework.Assert;
+
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.apache.hadoop.conf.Configuration;
@@ -34,8 +36,9 @@ abstract class MRBaseTest
 	//test validation constants
 
 	public static final String TEST_GIT_PATH = "c:/git/"
-	public static final String TEST_DATA_PATH = "SQLWindowing/windowing/src/test/groovy/testOutput"
+	public static final String TEST_DATA_PATH = "SQLWindowing/windowing/src/test/groovy/testOutput/"
 	public static final String TEST_DIFF_EXE = "c:/cygwin/bin/diff.exe " 
+	public static final String TEST_DIFF_EXE_PARAM = "windowing.test.diff.exe"
 	
 	static refDir = TEST_GIT_PATH+ TEST_DATA_PATH + "ref/"
 	static tempDir = TEST_GIT_PATH+ TEST_DATA_PATH + "out/"
@@ -52,6 +55,7 @@ abstract class MRBaseTest
 		wshell = new WindowingShell(hCfg, new MRTranslator(), 
 			new MRExecutor())
 		wshell.hiveQryExec = new ThriftBasedHiveQueryExecutor(conf)
+		
 	}
 	
 	@Before
@@ -60,31 +64,32 @@ abstract class MRBaseTest
 		outStream.reset();
 	}
 
-	def  testExecute(String methName, String command) // e.g. testExecute("testRC",query_string)
+	def  testExecute(String command) // e.g. testExecute("testRC",query_string)
 	{
 		// always spit out diff on sys output
 		// throw assert exception 
-
-		//find the name of the file to be written to
-		//should find the name of the derived class from where this method is invoked.
-		def Collection pathParts = this.class.name.split(/\./) 
-		def cname = pathParts[pathParts.size() -1] //Get only the class name > E.g. MRTest
-
-		def clName = tempDir+  "/" + cname + "_"+ methName + ".out" //Output file name > E.g. C:\git\SQLWindowing\windowing\src\test\groovy\data\testOutputTemp\MRTest_testRC
-		def  clFile = new File(clName)
-		def cqop = new CommandLog(out: new PrintStream(clFile)) // create the output file
+		// TODO: modes of execution
+		//	1: Golden Output creation
+		//  2: Run with Diff
+		//  3: Run without Diff (no local output --> CommandLog == null
+		def tr = new Exception().getStackTrace()
+		def methName =  new Exception().getStackTrace()[14].methodName
+		def cname =  new Exception().getStackTrace()[14].className
+		def outFileName = tempDir+ cname + "_"+ methName + ".out" //Output file name > E.g. C:\git\SQLWindowing\windowing\src\test\groovy\data\testOutputTemp\MRTest_testRC		def  clFile = new File(clName)
+		def cqop = new CommandLog(out: new PrintStream(outFileName)) // create the output file
 		wshell.execute(command, cqop)
 
 		def sp = " "
-		def cmd = TEST_DIFF_EXE
-		def cl = cmd + (refDir+clName) + sp + (tempDir + clName)
+		def cmd = wshell.cfg.get(TEST_DIFF_EXE_PARAM)
+		def cmdLine = cmd + (refDir + cname + "_"+ methName + ".out") + sp + (tempDir + cname + "_"+ methName + ".out")
 		def sout = new StringBuffer()
 		def serr = new StringBuffer()
-		def proc = cl.execute()
+		def proc = cmdLine.execute()
 		proc.consumeProcessOutput(sout, serr)
 		proc.waitForOrKill(1000) //TODO: Tune the wait time for large files
 		// print only if the output buffer is non-empty or not-null
-		if(sout) println sout // TODO: Throw assert exception
+		Assert.assertFalse((String)sout, sout)
+		
 	}
 
 		
@@ -175,6 +180,9 @@ abstract class MRBaseTest
 		conf.set(Constants.HIVE_THRIFTSERVER, "hbserver7.dhcp.pal.sap.corp")
 		conf.setInt(Constants.HIVE_THRIFTSERVER_PORT, 10000)
 		conf.set("HIVE_HOME", "C:/git/hive/bin/hive-0.9.0-bin")
+		
+		//for diff output
+		conf.set(TEST_DIFF_EXE_PARAM, TEST_DIFF_EXE)
 		
 		return conf;
 	}

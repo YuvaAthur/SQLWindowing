@@ -24,6 +24,7 @@ import com.sap.hadoop.windowing.runtime.WindowingShell;
 class CommandLog extends QueryOutputPrinter
 {
 	PrintStream out;
+	int limit;//TODO: limits number of lines captured.
 	protected printOutput(String s) { out.println(s)}
 }
 
@@ -37,8 +38,15 @@ abstract class MRBaseTest
 
 	public static final String TEST_GIT_PATH = "c:/git/"
 	public static final String TEST_DATA_PATH = "SQLWindowing/windowing/src/test/groovy/testOutput/"
+	
 	public static final String TEST_DIFF_EXE = "c:/cygwin/bin/diff.exe " 
 	public static final String TEST_DIFF_EXE_PARAM = "windowing.test.diff.exe"
+	
+	// 0: diff with golden output | 1: no diff - don't generate local output | 2: generate golden output (check-in after this!)
+	public static final Integer TEST_DIFF_MODE_DIFF_DEFAULT = 0 // 0 : default: diff with golden output
+	public static final Integer TEST_DIFF_MODE_NO_DIFF = 1 // 1 : diff with golden output
+	public static final Integer TEST_DIFF_MODE_GEN_REF = 2 // 2 : diff with golden output
+	public static final String TEST_DIFF_MODE_PARAM = "windowing.test.diff.mode"
 	
 	static refDir = TEST_GIT_PATH+ TEST_DATA_PATH + "ref/"
 	static tempDir = TEST_GIT_PATH+ TEST_DATA_PATH + "out/"
@@ -66,29 +74,56 @@ abstract class MRBaseTest
 
 	def  testExecute(String command) // e.g. testExecute("testRC",query_string)
 	{
-		// always spit out diff on sys output
-		// throw assert exception 
-		// TODO: modes of execution
+		// Modes of execution
+		//  0: Run with Diff
 		//	1: Golden Output creation
-		//  2: Run with Diff
-		//  3: Run without Diff (no local output --> CommandLog == null
-		def tr = new Exception().getStackTrace()
-		def methName =  new Exception().getStackTrace()[14].methodName
-		def cname =  new Exception().getStackTrace()[14].className
-		def outFileName = tempDir+ cname + "_"+ methName + ".out" //Output file name > E.g. C:\git\SQLWindowing\windowing\src\test\groovy\data\testOutputTemp\MRTest_testRC		def  clFile = new File(clName)
-		def cqop = new CommandLog(out: new PrintStream(outFileName)) // create the output file
-		wshell.execute(command, cqop)
+		//  2: Run without Diff (no local output --> CommandLog == null
+		
+		def diffmode = new Integer(wshell.cfg.get(TEST_DIFF_MODE_PARAM))
 
+		def tr = new Exception().getStackTrace()
+		def methName = "" // new Exception().getStackTrace()[14].methodName
+		def className =  "" //new Exception().getStackTrace()[14].className
+
+		for (i in (tr.size()-1)..0){
+			def s = tr[i].className
+			if(s.contains("windowing")){
+				methName = tr[i].methodName
+				className = s
+				break
+			}
+		}
+		def refFile = (refDir + className + "_"+ methName + ".out")		
+		def outFile = (tempDir + className + "_"+ methName + ".out")
 		def sp = " "
-		def cmd = wshell.cfg.get(TEST_DIFF_EXE_PARAM)
-		def cmdLine = cmd + (refDir + cname + "_"+ methName + ".out") + sp + (tempDir + cname + "_"+ methName + ".out")
-		def sout = new StringBuffer()
-		def serr = new StringBuffer()
-		def proc = cmdLine.execute()
-		proc.consumeProcessOutput(sout, serr)
-		proc.waitForOrKill(1000) //TODO: Tune the wait time for large files
-		// print only if the output buffer is non-empty or not-null
-		Assert.assertFalse((String)sout, sout)
+		
+		
+		switch (diffmode){
+			case 1: //1: no diff - don't generate local output 
+				wshell.execute(command)
+				break
+				
+			case 2: //2: generate golden output (check-in after this!)
+				// TODO: check if the files have to be deleted before executing
+				def cqop = new CommandLog(out: new PrintStream(refFile)) // create the output file
+				wshell.execute(command, cqop)
+				break
+				
+			default: //default : diffmode = 0
+				def cqop = new CommandLog(out: new PrintStream(outFile)) // create the output file
+				wshell.execute(command, cqop)
+
+				def cmd = wshell.cfg.get(TEST_DIFF_EXE_PARAM)
+				def cmdLine = cmd + refFile + sp + outFile
+				def sout = new StringBuffer()
+				def serr = new StringBuffer()
+				def proc = cmdLine.execute()
+				proc.consumeProcessOutput(sout, serr)
+				proc.waitForOrKill(1000) //TODO: Tune the wait time for large files
+				// print only if the output buffer is non-empty or not-null
+				Assert.assertFalse((String)sout, sout)
+		}
+		
 		
 	}
 
@@ -183,6 +218,8 @@ abstract class MRBaseTest
 		
 		//for diff output
 		conf.set(TEST_DIFF_EXE_PARAM, TEST_DIFF_EXE)
+		//conf.setInt(TEST_DIFF_MODE_PARAM, TEST_DIFF_MODE_DIFF_DEFAULT)
+		conf.setInt(TEST_DIFF_MODE_PARAM, TEST_DIFF_MODE_GEN_REF)
 		
 		return conf;
 	}

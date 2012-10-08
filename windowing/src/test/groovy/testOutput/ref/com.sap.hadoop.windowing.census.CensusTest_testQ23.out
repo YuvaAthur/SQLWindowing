@@ -1,0 +1,397 @@
+001	Oakland CCD                                                                               	411480	1	100.0	0
+001	Hayward CCD                                                                               	366577	2	89.08744045883154	44903
+001	Fremont CCD                                                                               	325166	3	79.02352483717313	41411
+001	Livermore-Pleasanton CCD                                                                  	202117	4	49.11951978224944	123049
+001	Berkeley CCD                                                                              	131119	5	31.865218236609312	70998
+001	Alameda CCD                                                                               	73812	6	17.93817439486731	57307
+003	Markleeville CCD                                                                          	1175	1	100.0	0
+005	Ione CCD                                                                                  	12380	1	100.0	0
+005	Pine Grove-Silver Lake CCD                                                                	9604	2	77.5767366720517	2776
+005	Sutter Creek-Plymouth CCD                                                                 	8382	3	67.7059773828756	1222
+005	Jackson CCD                                                                               	7725	4	62.399030694668824	657
+007	Chico CCD                                                                                 	100826	1	100.0	0
+007	Paradise CCD                                                                              	46200	2	45.8215142919485	54626
+007	Oroville CCD                                                                              	39094	3	38.77372899847262	7106
+007	Gridley CCD                                                                               	10936	4	10.846408664431793	28158
+007	Palermo CCD                                                                               	9086	5	9.01156447741654	1850
+007	Durham CCD                                                                                	5297	6	5.253605220875568	3789
+007	Feather Falls CCD                                                                         	5157	7	5.114752147263603	140
+007	Biggs CCD                                                                                 	3404	8	3.3761133041080673	1753
+009	San Andreas CCD                                                                           	21999	1	100.0	0
+009	Angels City CCD                                                                           	12943	2	58.83449247693077	9056
+009	Arnold-West Point CCD                                                                     	10636	3	48.34765216600754	2307
+011	Central Colusa CCD                                                                        	11838	1	100.0	0
+011	East Colusa CCD                                                                           	8798	2	74.31998648420341	3040
+011	West Colusa CCD                                                                           	783	3	6.614292954891029	8015
+013	Central Contra Costa CCD                                                                  	471183	1	100.0	0
+013	West Contra Costa CCD                                                                     	245523	2	52.107779779830764	225660
+013	Antioch-Pittsburg CCD                                                                     	149665	3	31.763667195123762	95858
+013	East Contra Costa CCD                                                                     	119315	4	25.322433109853282	30350
+013	Tassajara CCD                                                                             	57964	5	12.301802059921517	61351
+013	Briones CCD                                                                               	5375	6	1.1407457399778855	52589
+015	Crescent City CCD                                                                         	23582	1	100.0	0
+015	Smith River-Gasquet CCD                                                                   	3655	2	15.499109490289204	19927
+015	Klamath CCD                                                                               	1373	3	5.822237299635315	2282
+017	South El Dorado CCD                                                                       	102407	1	100.0	0
+017	North El Dorado CCD                                                                       	31207	2	30.473502787895356	71200
+017	South Lake Tahoe CCD                                                                      	30728	3	30.00576132490943	479
+017	Placerville CCD                                                                           	16716	4	16.323102912886814	14012
+019	Fresno CCD                                                                                	664000	1	100.0	0
+019	Sanger CCD                                                                                	34895	2	5.255271084337349	629105
+019	Selma CCD                                                                                 	30557	3	4.601957831325302	4338
+019	Reedley CCD                                                                               	29161	4	4.39171686746988	1396
+019	Kerman CCD                                                                                	23487	5	3.537198795180723	5674
+019	Parlier-Del Rey CCD                                                                       	19703	6	2.967319277108434	3784
+019	Coalinga CCD                                                                              	19362	7	2.915963855421687	341
+019	Sierra CCD                                                                                	18981	8	2.8585843373493973	381
+019	Kingsburg CCD                                                                             	12780	9	1.924698795180723	6201
+019	Mendota CCD                                                                               	12551	10	1.890210843373494	229
+019	Orange Cove CCD                                                                           	10821	11	1.6296686746987952	1730
+019	Fowler CCD                                                                                	10800	12	1.6265060240963853	21
+019	Caruthers-Raisin City CCD                                                                 	10093	13	1.5200301204819278	707
+019	Firebaugh CCD                                                                             	9143	14	1.376957831325301	950
+019	Huron CCD                                                                                 	7991	15	1.2034638554216868	1152
+019	San Joaquin-Tranquillity CCD                                                              	6978	16	1.0509036144578314	1013
+019	Riverdale CCD                                                                             	5599	17	0.843222891566265	1379
+019	Laton CCD                                                                                 	3548	18	0.5343373493975904	2051
+021	Orland CCD                                                                                	17598	1	100.0	0
+021	Willows CCD                                                                               	10524	2	59.802250255710874	7074
+023	Eureka CCD                                                                                	48424	1	100.0	0
+023	Arcata CCD                                                                                	23495	2	48.51932925821906	24929
+023	North Coastal CCD                                                                         	22194	3	45.83264496943664	1301
+023	Fortuna CCD                                                                               	17847	4	36.855691392697835	4347
+023	Garberville CCD                                                                           	13518	5	27.915909466380306	4329
+023	Willow Creek-Hoopa Valley CCD                                                             	5925	6	12.235668263670906	7593
+023	Ferndale CCD                                                                              	3220	7	6.649595242028745	2705
+025	El Centro CCD                                                                             	62179	1	100.0	0
+025	Calexico CCD                                                                              	39216	2	63.06952508081507	22963
+025	Brawley CCD                                                                               	26008	3	41.82762669068335	13208
+025	Calipatria-Westmorland CCD                                                                	12248	4	19.697968767590343	13760
+025	Imperial CCD                                                                              	12047	5	19.374708502870742	201
+025	West Imperial CCD                                                                         	10389	6	16.708213383939917	1658
+025	Holtville CCD                                                                             	8123	7	13.063896170732884	2266
+025	Winterhaven-Bard CCD                                                                      	3052	8	4.90840959166278	5071
+025	East Imperial CCD                                                                         	1266	9	2.036057189726435	1786
+027	Bishop CCD                                                                                	12600	1	100.0	0
+027	Lone Pine CCD                                                                             	2613	2	20.738095238095237	9987
+027	Independence CCD                                                                          	2568	3	20.38095238095238	45
+027	Death Valley CCD                                                                          	765	4	6.071428571428571	1803
+029	Bakersfield CCD                                                                           	393778	1	100.0	0
+029	East Kern CCD                                                                             	78648	2	19.972674958987042	315130
+029	Rosedale CCD                                                                              	70154	3	17.81562200021332	8494
+029	Delano-McFarland CCD                                                                      	68758	4	17.461107527591686	1396
+029	Greenfield-Panama CCD                                                                     	48458	5	12.305918563251375	20300
+029	Arvin-Lamont CCD                                                                          	41669	6	10.581850687443179	6789
+029	Tehachapi CCD                                                                             	36300	7	9.218392088943517	5369
+029	West Kern CCD                                                                             	30229	8	7.6766604533518885	6071
+029	Wasco CCD                                                                                 	29808	9	7.569747421135767	421
+029	Shafter CCD                                                                               	21642	10	5.495990126416407	8166
+029	Lake Isabella CCD                                                                         	16234	11	4.122627470300524	5408
+029	Buttonwillow CCD                                                                          	3953	12	1.0038651219722787	12281
+031	Hanford CCD                                                                               	67210	1	100.0	0
+031	Lemoore CCD                                                                               	36350	2	54.08421365868175	30860
+031	Stratford CCD                                                                             	16634	3	24.749293259931555	19716
+031	Avenal CCD                                                                                	15565	4	23.158756137479543	1069
+031	Corcoran CCD                                                                              	13766	5	20.482071120368992	1799
+031	Hanford Northeast CCD                                                                     	3457	6	5.143579824430889	10309
+033	Clearlake CCD                                                                             	15849	1	100.0	0
+033	Lakeport CCD                                                                              	9420	2	59.43592655688056	6429
+033	Middletown CCD                                                                            	7575	3	47.794813552905545	1845
+033	Lucerne-Clearlake Oaks CCD                                                                	6830	4	43.09420152691021	745
+033	Clearlake Riviera CCD                                                                     	6059	5	38.229541295980816	771
+033	Kelseyville CCD                                                                           	6045	6	38.14120764717017	14
+033	Upper Lake-Nice CCD                                                                       	5824	7	36.746797905230615	221
+033	Cobb CCD                                                                                  	3865	8	24.386396618083158	1959
+033	Lower Lake CCD                                                                            	3198	9	20.177929206890024	667
+035	Susanville CCD                                                                            	26758	1	100.0	0
+035	Honey Lake CCD                                                                            	3781	2	14.130353539128485	22977
+035	Westwood CCD                                                                              	2534	3	9.47006502728156	1247
+035	Big Valley CCD                                                                            	1483	4	5.542267733014426	1051
+035	Madeline Plains CCD                                                                       	339	5	1.26691083040586	1144
+037	Los Angeles CCD                                                                           	2504251	1	100.0	0
+037	San Fernando Valley CCD                                                                   	1771545	2	70.74151113446695	732706
+037	East San Gabriel Valley CCD                                                               	935875	3	37.371453580332	835670
+037	Long Beach-Lakewood CCD                                                                   	569100	4	22.72535780159417	366775
+037	South Gate-East Los Angeles CCD                                                           	501237	5	20.015445736070387	67863
+037	Downey-Norwalk CCD                                                                        	414144	6	16.537639397967695	87093
+037	Inglewood CCD                                                                             	369694	7	14.762657577055974	44450
+037	Compton CCD                                                                               	342576	8	13.67977890395172	27118
+037	Upper San Gabriel Valley CCD                                                              	323899	9	12.933967082373133	18677
+037	Southwest San Gabriel Valley CCD                                                          	318982	10	12.737620949337746	4917
+037	Whittier CCD                                                                              	316911	11	12.65492157136006	2071
+037	Pasadena CCD                                                                              	268040	12	10.703399938744159	48871
+037	Newhall CCD                                                                               	254330	13	10.155930855173862	13710
+037	South Antelope Valley CCD                                                                 	208925	14	8.342813879279673	45405
+037	North Antelope Valley CCD                                                                 	190690	15	7.614652045661558	18235
+037	Torrance CCD                                                                              	145438	16	5.807644680984454	45252
+037	South Bay Cities CCD                                                                      	138043	17	5.512346805491942	7395
+037	Palos Verdes CCD                                                                          	91365	18	3.648396266987614	46678
+037	Santa Monica CCD                                                                          	89736	19	3.5833468769703996	1629
+037	Agoura Hills-Malibu CCD                                                                   	63824	20	2.5486263158125926	25912
+039	Madera CCD                                                                                	92437	1	100.0	0
+039	Chowchilla CCD                                                                            	23371	2	25.28316583186386	69066
+039	Yosemite Lakes CCD                                                                        	14481	3	15.665804818416868	8890
+039	Oakhurst-North Fork CCD                                                                   	13969	4	15.111914060387074	512
+039	Madera Southeast CCD                                                                      	5319	5	5.754189339766544	8650
+039	Madera West CCD                                                                           	1288	6	1.3933814381686986	4031
+041	San Rafael CCD                                                                            	70235	1	100.0	0
+041	Ross Valley CCD                                                                           	58738	2	83.63066847013597	11497
+041	Novato CCD                                                                                	58652	3	83.5082223962412	86
+041	Southeast Marin CCD                                                                       	53129	4	75.64462162739375	5523
+041	Northwest Marin CCD                                                                       	8656	5	12.324339716665481	44473
+041	Bolinas CCD                                                                               	2999	6	4.269950879191287	5657
+043	Mariposa CCD                                                                              	13097	1	100.0	0
+043	Coulterville CCD                                                                          	3352	2	25.593647400167978	9745
+043	Yosemite Valley CCD                                                                       	1802	3	13.758876078491259	1550
+045	Ukiah CCD                                                                                 	27163	1	100.0	0
+045	Willits CCD                                                                               	13120	2	48.30099768066856	14043
+045	Fort Bragg CCD                                                                            	12178	3	44.83304495085226	942
+045	Redwood Valley-Potter Valley CCD                                                          	12032	4	44.29554909251555	146
+045	Mendocino CCD                                                                             	10609	5	39.05680521297353	1423
+045	Laytonville-Leggett CCD                                                                   	4155	6	15.296543091705628	6454
+045	Point Arena CCD                                                                           	3915	7	14.412988256083642	240
+045	Covelo CCD                                                                                	2587	8	9.523984832308654	1328
+045	Hopland CCD                                                                               	2082	9	7.664838199020727	505
+047	Merced CCD                                                                                	99537	1	100.0	0
+047	Atwater CCD                                                                               	48839	2	49.0661763967168	50698
+047	Los Banos CCD                                                                             	40271	3	40.45832203100355	8568
+047	Livingston-Delhi CCD                                                                      	30803	4	30.946281282337225	9468
+047	Hilmar-Irwin CCD                                                                          	9905	5	9.951073470166873	20898
+047	Dos Palos CCD                                                                             	9261	6	9.304077880587117	644
+047	Planada-Le Grand CCD                                                                      	8311	7	8.34965892080332	950
+047	Gustine CCD                                                                               	7835	8	7.871444789374806	476
+047	Snelling CCD                                                                              	1031	9	1.0357957342495756	6804
+049	Alturas CCD                                                                               	6511	1	100.0	0
+049	Surprise Valley CCD                                                                       	1265	2	19.428659192136386	5246
+049	Newell CCD                                                                                	1076	3	16.5258792812164	189
+049	Adin-Lookout CCD                                                                          	834	4	12.809092305329441	242
+051	Mammoth Lakes CCD                                                                         	12117	1	100.0	0
+051	North Mono CCD                                                                            	2085	2	17.20722951225551	10032
+053	Salinas CCD                                                                               	163203	1	100.0	0
+053	Seaside-Monterey CCD                                                                      	107513	2	65.87685275393223	55690
+053	Gonzales CCD                                                                              	21250	3	13.020593984179213	86263
+053	Castroville CCD                                                                           	18722	4	11.471602850437797	2528
+053	Pajaro CCD                                                                                	17415	5	10.670759728681459	1307
+053	Greenfield CCD                                                                            	17231	6	10.55801670312433	184
+053	Soledad CCD                                                                               	16642	7	10.19711647457461	589
+053	King City CCD                                                                             	16276	8	9.972855891129452	366
+053	Carmel-by-the-Sea CCD                                                                     	14704	9	9.009638303217466	1572
+053	Toro Park CCD                                                                             	10680	10	6.543997352989835	4024
+053	Carmel Valley CCD                                                                         	5933	11	3.635349840382836	4747
+053	San Ardo CCD                                                                              	3778	12	2.3149084269284264	2155
+053	Big Sur CCD                                                                               	1710	13	1.047774857079833	2068
+055	Napa CCD                                                                                  	115175	1	100.0	0
+055	St. Helena CCD                                                                            	7682	2	6.669850227914044	107493
+055	Calistoga CCD                                                                             	6448	3	5.598437160842196	1234
+055	Angwin CCD                                                                                	5373	4	4.665074886042978	1075
+055	Lake Berryessa CCD                                                                        	1806	5	1.5680486216626872	3567
+057	Grass Valley CCD                                                                          	66614	1	100.0	0
+057	Donner CCD                                                                                	16912	2	25.388056564686103	49702
+057	Nevada City CCD                                                                           	15238	3	22.875071306332	1674
+059	Anaheim-Santa Ana-Garden Grove CCD                                                        	1648519	1	100.0	0
+059	North Coast CCD                                                                           	366151	2	22.210905667450604	1282368
+059	South Coast CCD                                                                           	304548	3	18.474036392665173	61603
+059	Central Coast CCD                                                                         	246125	4	14.930067533343564	58423
+059	Mission Viejo CCD                                                                         	221910	5	13.461173331942186	24215
+059	Irvine-Lake Forest CCD                                                                    	220351	6	13.366603599958507	1559
+059	Silverado CCD                                                                             	2628	7	0.15941581504368466	217723
+061	Roseville CCD                                                                             	115374	1	100.0	0
+061	Rocklin CCD                                                                               	85223	2	73.866729072408	30151
+061	Lincoln CCD                                                                               	66422	3	57.57102986808119	18801
+061	Auburn CCD                                                                                	44468	4	38.54247924142354	21954
+061	Colfax-Monumental Ridge CCD                                                               	20351	5	17.639156135697817	24117
+061	Lake Tahoe CCD                                                                            	10448	6	9.055766463848007	9903
+061	Foresthill-Back Country CCD                                                               	6146	7	5.327023419487927	4302
+063	Quincy CCD                                                                                	6661	1	100.0	0
+063	Portola CCD                                                                               	4760	2	71.46074163038583	1901
+063	Chester CCD                                                                               	3957	3	59.405494670469906	803
+063	Greenville CCD                                                                            	2601	4	39.04819096231797	1356
+063	Graeagle CCD                                                                              	1844	5	27.68353100135115	757
+063	Feather River Canyon CCD                                                                  	184	6	2.7623479957964268	1660
+065	Riverside CCD                                                                             	456130	1	100.0	0
+065	Murrieta CCD                                                                              	282939	2	62.030342226996694	173191
+065	Perris Valley CCD                                                                         	262598	3	57.57086795431127	20341
+065	Coachella Valley CCD                                                                      	180693	4	39.614364325959706	81905
+065	Corona CCD                                                                                	174179	5	38.1862626882687	6514
+065	Hemet-San Jacinto CCD                                                                     	156265	6	34.258873566746324	17914
+065	Jurupa CCD                                                                                	148672	7	32.594216561068116	7593
+065	Cathedral City-Palm Desert CCD                                                            	144660	8	31.714642755354834	4012
+065	Elsinore Valley CCD                                                                       	110544	9	24.235196106373184	34116
+065	San Gorgonio Pass CCD                                                                     	86603	10	18.986473154583123	23941
+065	Desert Hot Springs CCD                                                                    	52287	11	11.463179356762327	34316
+065	Palm Springs CCD                                                                          	43976	12	9.641111086751584	8311
+065	Norco CCD                                                                                 	25934	13	5.685659789972157	18042
+065	Lake Mathews CCD                                                                          	24427	14	5.355271523469186	1507
+065	Blythe CCD                                                                                	15045	15	3.298401771424813	9382
+065	Idyllwild CCD                                                                             	14846	16	3.2547738583298624	199
+065	Chuckwalla Valley CCD                                                                     	9843	17	2.1579374301186065	5003
+067	Sacramento CCD                                                                            	1072790	1	100.0	0
+067	Elk Grove CCD                                                                             	113863	2	10.6137268244484	958927
+067	Rancho Cordova CCD                                                                        	110868	3	10.334548234043941	2995
+067	Folsom CCD                                                                                	72163	4	6.72666598309082	38705
+067	Galt CCD                                                                                  	37029	5	3.451654098192564	35134
+067	Sloughhouse CCD                                                                           	6784	6	0.6323698021047922	30245
+067	Isleton CCD                                                                               	5291	7	0.4931999738998312	1493
+069	Hollister CCD                                                                             	48498	1	100.0	0
+069	San Juan Bautista CCD                                                                     	6051	2	12.476803167140913	42447
+069	San Benito-Bitterwater CCD                                                                	720	3	1.4845973029815662	5331
+071	San Bernardino CCD                                                                        	807147	1	100.0	0
+071	Ontario CCD                                                                               	615598	2	76.26838729500327	191549
+071	Victorville-Hesperia CCD                                                                  	370441	3	45.89510956492436	245157
+071	Twentynine Palms-Yucca Valley CCD                                                         	69860	4	8.655176814136706	300581
+071	Yucaipa CCD                                                                               	51787	5	6.416055563608612	18073
+071	Barstow CCD                                                                               	41257	6	5.111460489848813	10530
+071	Big Bear CCD                                                                              	25635	7	3.1760013975149506	15622
+071	Lake Arrowhead CCD                                                                        	24757	8	3.067223194783602	878
+071	Newberry Springs-Baker CCD                                                                	12696	9	1.5729476786756316	12061
+071	Needles CCD                                                                               	7006	10	0.8679955448016285	5690
+071	Mount Baldy-Wrightwood CCD                                                                	6852	11	0.8489159967143531	154
+071	Searles Valley CCD                                                                        	2174	12	0.2693437502710163	4678
+073	San Diego CCD                                                                             	2259481	1	100.0	0
+073	Oceanside-Escondido CCD                                                                   	627851	2	27.78739896462949	1631630
+073	Fallbrook CCD                                                                             	47304	3	2.093578127012354	580547
+073	Camp Pendleton CCD                                                                        	37452	4	1.657548791071932	9852
+073	Ramona CCD                                                                                	34870	5	1.5432747608853536	2582
+073	Valley Center CCD                                                                         	23330	6	1.0325380031963092	11540
+073	Jamul CCD                                                                                 	18958	7	0.8390422402312744	4372
+073	Alpine CCD                                                                                	15035	8	0.6654182973877629	3923
+073	Mountain Empire CCD                                                                       	7589	9	0.33587359220989244	7446
+073	Pauma Valley CCD                                                                          	7458	10	0.33007580059314506	131
+073	Palomar-Julian CCD                                                                        	6267	11	0.27736458062714403	1191
+073	Laguna-Pine Valley CCD                                                                    	5278	12	0.2335934668182649	989
+073	Borrego Springs CCD                                                                       	4440	13	0.1965053036515908	838
+075	San Francisco CCD                                                                         	805235	1	100.0	0
+077	Stockton CCD                                                                              	343203	1	100.0	0
+077	Tracy CCD                                                                                 	106253	2	30.959228211874606	236950
+077	Manteca CCD                                                                               	93456	3	27.230531201650336	12797
+077	Lodi CCD                                                                                  	82378	4	24.00270393906813	11078
+077	Ripon CCD                                                                                 	16688	5	4.862428358726468	65690
+077	Escalon CCD                                                                               	13320	6	3.881084955551088	3368
+077	Thornton CCD                                                                              	13225	7	3.8534045448320677	95
+077	Lockeford CCD                                                                             	11360	8	3.3099943765060327	1865
+077	Linden-Farmington CCD                                                                     	5423	9	1.5801143929394559	5937
+079	Arroyo Grande CCD                                                                         	76029	1	100.0	0
+079	San Luis Obispo CCD                                                                       	64447	2	84.76633916005734	11582
+079	Paso Robles CCD                                                                           	49131	3	64.6213944679004	15316
+079	Atascadero CCD                                                                            	44512	4	58.546081100632655	4619
+079	North Coast CCD                                                                           	35518	5	46.71638453747912	8994
+081	San Mateo CCD                                                                             	383442	1	100.0	0
+081	South San Francisco CCD                                                                   	306115	2	79.83345590728193	77327
+081	Half Moon Bay CCD                                                                         	28894	3	7.5354290870588	277221
+083	Santa Barbara CCD                                                                         	184449	1	100.0	0
+083	Santa Maria CCD                                                                           	132726	2	71.95810223964347	51723
+083	Lompoc CCD                                                                                	57742	3	31.305130415453597	74984
+083	Solvang-Santa Ynez CCD                                                                    	22670	4	12.290660290920526	35072
+083	Carpinteria CCD                                                                           	17718	5	9.605907323975734	4952
+083	Guadalupe CCD                                                                             	7345	6	3.982130561835521	10373
+083	Cuyama CCD                                                                                	1245	7	0.6749833287250134	6100
+085	San Jose CCD                                                                              	1661105	1	100.0	0
+085	South Santa Clara Valley CCD                                                              	103477	2	6.229407532937413	1557628
+085	West Santa Clara CCD                                                                      	7529	3	0.4532525036045283	95948
+085	Llagas-Uvas CCD                                                                           	4014	4	0.24164637394987074	3515
+085	Lexington Hills CCD                                                                       	4009	5	0.24134536949801488	5
+085	Diablo Range CCD                                                                          	1508	6	0.09078294267972223	2501
+087	Santa Cruz CCD                                                                            	154331	1	100.0	0
+087	Watsonville CCD                                                                           	77150	2	49.989956651612445	77181
+087	San Lorenzo Valley CCD                                                                    	23195	3	15.02938489350811	53955
+087	West Santa Cruz CCD                                                                       	4283	4	2.7752039447680636	18912
+087	Summit Road CCD                                                                           	3423	5	2.2179600987487933	860
+089	Redding CCD                                                                               	152644	1	100.0	0
+089	Central Shasta CCD                                                                        	11527	2	7.551557873221351	141117
+089	East Shasta CCD                                                                           	7475	3	4.897015277377427	4052
+089	Southwest Shasta CCD                                                                      	4100	4	2.6859883126752444	3375
+089	Sacramento Canyon CCD                                                                     	1477	5	0.9676109116637405	2623
+091	East Sierra CCD                                                                           	2336	1	100.0	0
+091	West Sierra CCD                                                                           	904	2	38.6986301369863	1432
+093	Yreka CCD                                                                                 	11523	1	100.0	0
+093	Weed CCD                                                                                  	7231	2	62.75275535884752	4292
+093	Mount Shasta CCD                                                                          	6991	3	60.66996441898811	240
+093	Montague CCD                                                                              	4105	4	35.62440336717869	2886
+093	Etna CCD                                                                                  	3412	5	29.610344528334636	693
+093	Dunsmuir CCD                                                                              	2175	6	18.87529289247592	1237
+093	Happy Camp CCD                                                                            	2142	7	18.58890913824525	33
+093	Butte Valley CCD                                                                          	1955	8	16.966067864271455	187
+093	Fort Jones CCD                                                                            	1847	9	16.028811941334723	108
+093	Tulelake CCD                                                                              	1458	10	12.652954959645927	389
+093	McCloud-Medicine Lake CCD                                                                 	1409	11	12.227718476091296	49
+093	Hornbrook-Hilt CCD                                                                        	652	12	5.658248719951402	757
+095	Vallejo CCD                                                                               	144838	1	100.0	0
+095	Fairfield-Suisun City CCD                                                                 	138815	2	95.84156091633412	6023
+095	Vacaville CCD                                                                             	100015	3	69.05301095016502	38800
+095	Dixon CCD                                                                                 	21253	4	14.67363537193278	78762
+095	Rio Vista CCD                                                                             	8423	5	5.815462792913461	12830
+097	Santa Rosa CCD                                                                            	209745	1	100.0	0
+097	Petaluma CCD                                                                              	125304	2	59.74111421011228	84441
+097	Healdsburg CCD                                                                            	44548	3	21.239123697823548	80756
+097	Sonoma CCD                                                                                	40608	4	19.36065222055353	3940
+097	Sebastopol CCD                                                                            	27312	5	13.02152613888293	13296
+097	Russian River-Sonoma Coast CCD                                                            	22713	6	10.828863620110134	4599
+097	Cloverdale-Geyserville CCD                                                                	13648	7	6.506948914157667	9065
+099	Modesto CCD                                                                               	312842	1	100.0	0
+099	Turlock CCD                                                                               	82457	2	26.35739446749477	230385
+099	Oakdale CCD                                                                               	30054	3	9.606766354901195	52403
+099	Patterson CCD                                                                             	26139	4	8.355335920368749	3915
+099	Salida CCD                                                                                	19467	5	6.2226299537785845	6672
+099	Waterford CCD                                                                             	14800	6	4.730822587759956	4667
+099	Hughson CCD                                                                               	12373	7	3.9550316134022925	2427
+099	Newman CCD                                                                                	12321	8	3.9384098043101634	52
+099	Westport CCD                                                                              	4000	9	1.2786006993945827	8321
+101	Yuba City CCD                                                                             	74141	1	100.0	0
+101	Live Oak CCD                                                                              	10563	2	14.247177674970665	63578
+101	Sutter CCD                                                                                	3460	3	4.666783561052589	7103
+101	South Sutter CCD                                                                          	2551	4	3.440741290244264	909
+101	Yuba City Southwest CCD                                                                   	2461	5	3.319350966401856	90
+101	Meridian-Robbins CCD                                                                      	1561	6	2.105447727977772	900
+103	Red Bluff CCD                                                                             	40361	1	100.0	0
+103	Corning CCD                                                                               	14698	2	36.41634250885756	25663
+103	West Tehama CCD                                                                           	4515	3	11.186541463293773	10183
+103	East Tehama CCD                                                                           	3889	4	9.635539258194791	626
+105	Weaverville CCD                                                                           	7425	1	100.0	0
+105	Hayfork CCD                                                                               	3105	2	41.81818181818181	4320
+105	Northwest Trinity CCD                                                                     	2281	3	30.72053872053872	824
+105	Mad River CCD                                                                             	975	4	13.131313131313133	1306
+107	Visalia CCD                                                                               	135978	1	100.0	0
+107	Porterville CCD                                                                           	73297	2	53.90357263675006	62681
+107	Tulare CCD                                                                                	68347	3	50.26327788318699	4950
+107	Dinuba CCD                                                                                	32456	4	23.868566974069335	35891
+107	Exeter CCD                                                                                	28089	5	20.65701804703702	4367
+107	Orosi-Cutler CCD                                                                          	18269	6	13.4352615864331	9820
+107	Lindsay CCD                                                                               	16952	7	12.466722558060862	1317
+107	Earlimart CCD                                                                             	15152	8	11.142979011310654	1800
+107	Woodlake-Three Rivers CCD                                                                 	13168	9	9.68391945755931	1984
+107	Strathmore CCD                                                                            	7837	10	5.7634323199341075	5331
+107	Ivanhoe CCD                                                                               	7416	11	5.453823412610864	421
+107	Terra Bella CCD                                                                           	6628	12	4.874317904366883	788
+107	Pixley CCD                                                                                	6529	13	4.801512009295621	99
+107	Tipton CCD                                                                                	6446	14	4.740472723528806	83
+107	Springville-Johnsondale CCD                                                               	5615	15	4.129344452779126	831
+109	Sonora CCD                                                                                	20126	1	100.0	0
+109	Twain Harte-Tuolumne City CCD                                                             	16825	2	83.59833051773825	3301
+109	East Sonora-Phoenix Lake CCD                                                              	13490	3	67.02772533041836	3335
+109	Groveland CCD                                                                             	4924	4	24.46586505018384	8566
+111	Oxnard CCD                                                                                	234919	1	100.0	0
+111	Thousand Oaks CCD                                                                         	158803	2	67.59904477713596	76116
+111	Simi Valley CCD                                                                           	128981	3	54.90445642966299	29822
+111	Ventura CCD                                                                               	111889	4	47.62875714608013	17092
+111	Camarillo CCD                                                                             	66953	5	28.500461861322414	44936
+111	Moorpark CCD                                                                              	35924	6	15.292079397579592	31029
+111	Santa Paula CCD                                                                           	32060	7	13.64725713969496	3864
+111	Ojai-Mira Monte CCD                                                                       	27784	8	11.82705528288474	4276
+111	Fillmore CCD                                                                              	19488	9	8.295625300635539	8296
+111	Las Posas CCD                                                                             	3768	10	1.603957108620418	15720
+111	Triunfo Pass-Point Mugu CCD                                                               	1930	11	0.8215597716659785	1838
+111	Los Padres CCD                                                                            	819	12	0.3486308046603297	1111
+113	Davis CCD                                                                                 	74334	1	100.0	0
+113	Woodland CCD                                                                              	58695	2	78.96117523609654	15639
+113	East Yolo CCD                                                                             	48921	3	65.81241423843733	9774
+113	Winters CCD                                                                               	8106	4	10.904834934215836	40815
+113	Esparto CCD                                                                               	5325	5	7.163612882395673	2781
+113	Knights Landing CCD                                                                       	4193	6	5.640756585142734	1132
+113	Clarksburg CCD                                                                            	1275	7	1.7152312535313585	2918
+115	Olivehurst CCD                                                                            	21120	1	100.0	0
+115	Linda CCD                                                                                 	17602	2	83.34280303030303	3518
+115	Marysville CCD                                                                            	12382	3	58.626893939393945	5220
+115	Marysville Northeast CCD                                                                  	7357	4	34.834280303030305	5025
+115	Yuba Foothills CCD                                                                        	4941	5	23.394886363636363	2416
+115	East Yuba-Beale AFB CCD                                                                   	4520	6	21.401515151515152	421
+115	Wheatland CCD                                                                             	4233	7	20.042613636363637	287

@@ -77,5 +77,8 @@ class FunctionRegistry
 		registerTableClass(NoopWithMap.class)
 		registerTableClass(NPath.class)
 		registerTableClass(CandidateFrequentItemSets.class)
+		registerTableClass(ForecastDriver.class)
+		registerTableClass(ForecastDualDriver.class)
+		registerTableClass(Grow.class) 
 	}
 }	

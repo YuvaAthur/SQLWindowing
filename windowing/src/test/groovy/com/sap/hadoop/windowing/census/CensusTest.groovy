@@ -14,7 +14,7 @@ class CensusTest extends MRBaseTest
 	@Test
 	void testQ1()
 	{
-		wshell.execute("""
+		testExecute("""
 		from census_q1 
 		partition by county 
 		order by county, arealand desc 
@@ -33,7 +33,7 @@ class CensusTest extends MRBaseTest
 	@Test
 	void testQ2()
 	{
-		wshell.execute("""
+		testExecute("""
 		from census_q2
 		partition by county
 		order by pop100 desc
@@ -51,7 +51,7 @@ class CensusTest extends MRBaseTest
 	@Test
 	void testQ22()
 	{
-		wshell.execute("""
+		testExecute("""
 		from census_q2
 		partition by county
 		order by pop100 desc
@@ -70,7 +70,7 @@ class CensusTest extends MRBaseTest
 	@Test
 	void testQ23()
 	{
-		wshell.execute("""
+		testExecute("""
 		from census_q2
 		partition by county
 		order by pop100 desc
@@ -90,7 +90,7 @@ class CensusTest extends MRBaseTest
    @Test
    void testQ3()
    {
-	   wshell.execute("""
+	   testExecute("""
 	   from <select county, tract, arealand from geo_header_sf1 where sumlev = 140>
 	   partition by county
 	   order by county, arealand desc

@@ -6,14 +6,14 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.ExpectedException
 
-import com.sap.hadoop.windowing.BaseTest
+import com.sap.hadoop.windowing.MRBaseTest
 
-class ForecastDriverTest extends BaseTest 
+class ForecastDriverTest extends MRBaseTest 
 {
 	@Rule
 	public ExpectedException expectedEx = ExpectedException.none();
 	
-	@Test
+	//@Test
 	void testlocal() {
 		wshell.execute("""
 			from forecastDriver(tableinput(
@@ -63,6 +63,26 @@ class ForecastDriverTest extends BaseTest
 				'cost')
 			select name, headcount, dat, cost
 		into path='/tmp/mytestout1' 
+		serde 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
+		format 'org.apache.hadoop.mapred.TextOutputFormat'""")
+	
+		String r = outStream.toString()
+		r = r.replace("\r\n", "\n")
+		println r
+
+	}
+	@Test
+	void testyuva() {
+		testExecute("""
+			from forecastDriver(headcount
+			partition by dat
+			order by dat,
+				'2012-06-02 00:00:00',
+				'headcount',
+				'dat',
+				'cost')
+			select name, headcount, dat, cost
+		into path='/tmp/mytestout1'
 		serde 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
 		format 'org.apache.hadoop.mapred.TextOutputFormat'""")
 	

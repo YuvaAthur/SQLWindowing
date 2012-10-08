@@ -1,0 +1,397 @@
+001	Oakland CCD                                                                               	411480	1	27,25
+001	Hayward CCD                                                                               	366577	2	24,27
+001	Fremont CCD                                                                               	325166	3	21,53
+001	Livermore-Pleasanton CCD                                                                  	202117	4	13,38
+001	Berkeley CCD                                                                              	131119	5	8,68
+001	Alameda CCD                                                                               	73812	6	4,89
+003	Markleeville CCD                                                                          	1175	1	100,00
+005	Ione CCD                                                                                  	12380	1	32,50
+005	Pine Grove-Silver Lake CCD                                                                	9604	2	25,21
+005	Sutter Creek-Plymouth CCD                                                                 	8382	3	22,01
+005	Jackson CCD                                                                               	7725	4	20,28
+007	Chico CCD                                                                                 	100826	1	45,83
+007	Paradise CCD                                                                              	46200	2	21,00
+007	Oroville CCD                                                                              	39094	3	17,77
+007	Gridley CCD                                                                               	10936	4	4,97
+007	Palermo CCD                                                                               	9086	5	4,13
+007	Durham CCD                                                                                	5297	6	2,41
+007	Feather Falls CCD                                                                         	5157	7	2,34
+007	Biggs CCD                                                                                 	3404	8	1,55
+009	San Andreas CCD                                                                           	21999	1	48,27
+009	Angels City CCD                                                                           	12943	2	28,40
+009	Arnold-West Point CCD                                                                     	10636	3	23,34
+011	Central Colusa CCD                                                                        	11838	1	55,27
+011	East Colusa CCD                                                                           	8798	2	41,08
+011	West Colusa CCD                                                                           	783	3	3,66
+013	Central Contra Costa CCD                                                                  	471183	1	44,92
+013	West Contra Costa CCD                                                                     	245523	2	23,40
+013	Antioch-Pittsburg CCD                                                                     	149665	3	14,27
+013	East Contra Costa CCD                                                                     	119315	4	11,37
+013	Tassajara CCD                                                                             	57964	5	5,53
+013	Briones CCD                                                                               	5375	6	0,51
+015	Crescent City CCD                                                                         	23582	1	82,43
+015	Smith River-Gasquet CCD                                                                   	3655	2	12,78
+015	Klamath CCD                                                                               	1373	3	4,80
+017	South El Dorado CCD                                                                       	102407	1	56,56
+017	North El Dorado CCD                                                                       	31207	2	17,24
+017	South Lake Tahoe CCD                                                                      	30728	3	16,97
+017	Placerville CCD                                                                           	16716	4	9,23
+019	Fresno CCD                                                                                	664000	1	71,36
+019	Sanger CCD                                                                                	34895	2	3,75
+019	Selma CCD                                                                                 	30557	3	3,28
+019	Reedley CCD                                                                               	29161	4	3,13
+019	Kerman CCD                                                                                	23487	5	2,52
+019	Parlier-Del Rey CCD                                                                       	19703	6	2,12
+019	Coalinga CCD                                                                              	19362	7	2,08
+019	Sierra CCD                                                                                	18981	8	2,04
+019	Kingsburg CCD                                                                             	12780	9	1,37
+019	Mendota CCD                                                                               	12551	10	1,35
+019	Orange Cove CCD                                                                           	10821	11	1,16
+019	Fowler CCD                                                                                	10800	12	1,16
+019	Caruthers-Raisin City CCD                                                                 	10093	13	1,08
+019	Firebaugh CCD                                                                             	9143	14	0,98
+019	Huron CCD                                                                                 	7991	15	0,86
+019	San Joaquin-Tranquillity CCD                                                              	6978	16	0,75
+019	Riverdale CCD                                                                             	5599	17	0,60
+019	Laton CCD                                                                                 	3548	18	0,38
+021	Orland CCD                                                                                	17598	1	62,58
+021	Willows CCD                                                                               	10524	2	37,42
+023	Eureka CCD                                                                                	48424	1	35,97
+023	Arcata CCD                                                                                	23495	2	17,45
+023	North Coastal CCD                                                                         	22194	3	16,49
+023	Fortuna CCD                                                                               	17847	4	13,26
+023	Garberville CCD                                                                           	13518	5	10,04
+023	Willow Creek-Hoopa Valley CCD                                                             	5925	6	4,40
+023	Ferndale CCD                                                                              	3220	7	2,39
+025	El Centro CCD                                                                             	62179	1	35,63
+025	Calexico CCD                                                                              	39216	2	22,47
+025	Brawley CCD                                                                               	26008	3	14,90
+025	Calipatria-Westmorland CCD                                                                	12248	4	7,02
+025	Imperial CCD                                                                              	12047	5	6,90
+025	West Imperial CCD                                                                         	10389	6	5,95
+025	Holtville CCD                                                                             	8123	7	4,65
+025	Winterhaven-Bard CCD                                                                      	3052	8	1,75
+025	East Imperial CCD                                                                         	1266	9	0,73
+027	Bishop CCD                                                                                	12600	1	67,94
+027	Lone Pine CCD                                                                             	2613	2	14,09
+027	Independence CCD                                                                          	2568	3	13,85
+027	Death Valley CCD                                                                          	765	4	4,12
+029	Bakersfield CCD                                                                           	393778	1	46,90
+029	East Kern CCD                                                                             	78648	2	9,37
+029	Rosedale CCD                                                                              	70154	3	8,36
+029	Delano-McFarland CCD                                                                      	68758	4	8,19
+029	Greenfield-Panama CCD                                                                     	48458	5	5,77
+029	Arvin-Lamont CCD                                                                          	41669	6	4,96
+029	Tehachapi CCD                                                                             	36300	7	4,32
+029	West Kern CCD                                                                             	30229	8	3,60
+029	Wasco CCD                                                                                 	29808	9	3,55
+029	Shafter CCD                                                                               	21642	10	2,58
+029	Lake Isabella CCD                                                                         	16234	11	1,93
+029	Buttonwillow CCD                                                                          	3953	12	0,47
+031	Hanford CCD                                                                               	67210	1	43,93
+031	Lemoore CCD                                                                               	36350	2	23,76
+031	Stratford CCD                                                                             	16634	3	10,87
+031	Avenal CCD                                                                                	15565	4	10,17
+031	Corcoran CCD                                                                              	13766	5	9,00
+031	Hanford Northeast CCD                                                                     	3457	6	2,26
+033	Clearlake CCD                                                                             	15849	1	24,51
+033	Lakeport CCD                                                                              	9420	2	14,57
+033	Middletown CCD                                                                            	7575	3	11,71
+033	Lucerne-Clearlake Oaks CCD                                                                	6830	4	10,56
+033	Clearlake Riviera CCD                                                                     	6059	5	9,37
+033	Kelseyville CCD                                                                           	6045	6	9,35
+033	Upper Lake-Nice CCD                                                                       	5824	7	9,01
+033	Cobb CCD                                                                                  	3865	8	5,98
+033	Lower Lake CCD                                                                            	3198	9	4,95
+035	Susanville CCD                                                                            	26758	1	76,68
+035	Honey Lake CCD                                                                            	3781	2	10,84
+035	Westwood CCD                                                                              	2534	3	7,26
+035	Big Valley CCD                                                                            	1483	4	4,25
+035	Madeline Plains CCD                                                                       	339	5	0,97
+037	Los Angeles CCD                                                                           	2504251	1	25,51
+037	San Fernando Valley CCD                                                                   	1771545	2	18,04
+037	East San Gabriel Valley CCD                                                               	935875	3	9,53
+037	Long Beach-Lakewood CCD                                                                   	569100	4	5,80
+037	South Gate-East Los Angeles CCD                                                           	501237	5	5,10
+037	Downey-Norwalk CCD                                                                        	414144	6	4,22
+037	Inglewood CCD                                                                             	369694	7	3,77
+037	Compton CCD                                                                               	342576	8	3,49
+037	Upper San Gabriel Valley CCD                                                              	323899	9	3,30
+037	Southwest San Gabriel Valley CCD                                                          	318982	10	3,25
+037	Whittier CCD                                                                              	316911	11	3,23
+037	Pasadena CCD                                                                              	268040	12	2,73
+037	Newhall CCD                                                                               	254330	13	2,59
+037	South Antelope Valley CCD                                                                 	208925	14	2,13
+037	North Antelope Valley CCD                                                                 	190690	15	1,94
+037	Torrance CCD                                                                              	145438	16	1,48
+037	South Bay Cities CCD                                                                      	138043	17	1,41
+037	Palos Verdes CCD                                                                          	91365	18	0,93
+037	Santa Monica CCD                                                                          	89736	19	0,91
+037	Agoura Hills-Malibu CCD                                                                   	63824	20	0,65
+039	Madera CCD                                                                                	92437	1	61,27
+039	Chowchilla CCD                                                                            	23371	2	15,49
+039	Yosemite Lakes CCD                                                                        	14481	3	9,60
+039	Oakhurst-North Fork CCD                                                                   	13969	4	9,26
+039	Madera Southeast CCD                                                                      	5319	5	3,53
+039	Madera West CCD                                                                           	1288	6	0,85
+041	San Rafael CCD                                                                            	70235	1	27,83
+041	Ross Valley CCD                                                                           	58738	2	23,27
+041	Novato CCD                                                                                	58652	3	23,24
+041	Southeast Marin CCD                                                                       	53129	4	21,05
+041	Northwest Marin CCD                                                                       	8656	5	3,43
+041	Bolinas CCD                                                                               	2999	6	1,19
+043	Mariposa CCD                                                                              	13097	1	71,76
+043	Coulterville CCD                                                                          	3352	2	18,37
+043	Yosemite Valley CCD                                                                       	1802	3	9,87
+045	Ukiah CCD                                                                                 	27163	1	30,92
+045	Willits CCD                                                                               	13120	2	14,94
+045	Fort Bragg CCD                                                                            	12178	3	13,86
+045	Redwood Valley-Potter Valley CCD                                                          	12032	4	13,70
+045	Mendocino CCD                                                                             	10609	5	12,08
+045	Laytonville-Leggett CCD                                                                   	4155	6	4,73
+045	Point Arena CCD                                                                           	3915	7	4,46
+045	Covelo CCD                                                                                	2587	8	2,95
+045	Hopland CCD                                                                               	2082	9	2,37
+047	Merced CCD                                                                                	99537	1	38,91
+047	Atwater CCD                                                                               	48839	2	19,09
+047	Los Banos CCD                                                                             	40271	3	15,74
+047	Livingston-Delhi CCD                                                                      	30803	4	12,04
+047	Hilmar-Irwin CCD                                                                          	9905	5	3,87
+047	Dos Palos CCD                                                                             	9261	6	3,62
+047	Planada-Le Grand CCD                                                                      	8311	7	3,25
+047	Gustine CCD                                                                               	7835	8	3,06
+047	Snelling CCD                                                                              	1031	9	0,40
+049	Alturas CCD                                                                               	6511	1	67,22
+049	Surprise Valley CCD                                                                       	1265	2	13,06
+049	Newell CCD                                                                                	1076	3	11,11
+049	Adin-Lookout CCD                                                                          	834	4	8,61
+051	Mammoth Lakes CCD                                                                         	12117	1	85,32
+051	North Mono CCD                                                                            	2085	2	14,68
+053	Salinas CCD                                                                               	163203	1	39,32
+053	Seaside-Monterey CCD                                                                      	107513	2	25,90
+053	Gonzales CCD                                                                              	21250	3	5,12
+053	Castroville CCD                                                                           	18722	4	4,51
+053	Pajaro CCD                                                                                	17415	5	4,20
+053	Greenfield CCD                                                                            	17231	6	4,15
+053	Soledad CCD                                                                               	16642	7	4,01
+053	King City CCD                                                                             	16276	8	3,92
+053	Carmel-by-the-Sea CCD                                                                     	14704	9	3,54
+053	Toro Park CCD                                                                             	10680	10	2,57
+053	Carmel Valley CCD                                                                         	5933	11	1,43
+053	San Ardo CCD                                                                              	3778	12	0,91
+053	Big Sur CCD                                                                               	1710	13	0,41
+055	Napa CCD                                                                                  	115175	1	84,39
+055	St. Helena CCD                                                                            	7682	2	5,63
+055	Calistoga CCD                                                                             	6448	3	4,72
+055	Angwin CCD                                                                                	5373	4	3,94
+055	Lake Berryessa CCD                                                                        	1806	5	1,32
+057	Grass Valley CCD                                                                          	66614	1	67,45
+057	Donner CCD                                                                                	16912	2	17,12
+057	Nevada City CCD                                                                           	15238	3	15,43
+059	Anaheim-Santa Ana-Garden Grove CCD                                                        	1648519	1	54,76
+059	North Coast CCD                                                                           	366151	2	12,16
+059	South Coast CCD                                                                           	304548	3	10,12
+059	Central Coast CCD                                                                         	246125	4	8,18
+059	Mission Viejo CCD                                                                         	221910	5	7,37
+059	Irvine-Lake Forest CCD                                                                    	220351	6	7,32
+059	Silverado CCD                                                                             	2628	7	0,09
+061	Roseville CCD                                                                             	115374	1	33,11
+061	Rocklin CCD                                                                               	85223	2	24,46
+061	Lincoln CCD                                                                               	66422	3	19,06
+061	Auburn CCD                                                                                	44468	4	12,76
+061	Colfax-Monumental Ridge CCD                                                               	20351	5	5,84
+061	Lake Tahoe CCD                                                                            	10448	6	3,00
+061	Foresthill-Back Country CCD                                                               	6146	7	1,76
+063	Quincy CCD                                                                                	6661	1	33,29
+063	Portola CCD                                                                               	4760	2	23,79
+063	Chester CCD                                                                               	3957	3	19,78
+063	Greenville CCD                                                                            	2601	4	13,00
+063	Graeagle CCD                                                                              	1844	5	9,22
+063	Feather River Canyon CCD                                                                  	184	6	0,92
+065	Riverside CCD                                                                             	456130	1	20,83
+065	Murrieta CCD                                                                              	282939	2	12,92
+065	Perris Valley CCD                                                                         	262598	3	11,99
+065	Coachella Valley CCD                                                                      	180693	4	8,25
+065	Corona CCD                                                                                	174179	5	7,95
+065	Hemet-San Jacinto CCD                                                                     	156265	6	7,14
+065	Jurupa CCD                                                                                	148672	7	6,79
+065	Cathedral City-Palm Desert CCD                                                            	144660	8	6,61
+065	Elsinore Valley CCD                                                                       	110544	9	5,05
+065	San Gorgonio Pass CCD                                                                     	86603	10	3,96
+065	Desert Hot Springs CCD                                                                    	52287	11	2,39
+065	Palm Springs CCD                                                                          	43976	12	2,01
+065	Norco CCD                                                                                 	25934	13	1,18
+065	Lake Mathews CCD                                                                          	24427	14	1,12
+065	Blythe CCD                                                                                	15045	15	0,69
+065	Idyllwild CCD                                                                             	14846	16	0,68
+065	Chuckwalla Valley CCD                                                                     	9843	17	0,45
+067	Sacramento CCD                                                                            	1072790	1	75,61
+067	Elk Grove CCD                                                                             	113863	2	8,03
+067	Rancho Cordova CCD                                                                        	110868	3	7,81
+067	Folsom CCD                                                                                	72163	4	5,09
+067	Galt CCD                                                                                  	37029	5	2,61
+067	Sloughhouse CCD                                                                           	6784	6	0,48
+067	Isleton CCD                                                                               	5291	7	0,37
+069	Hollister CCD                                                                             	48498	1	87,75
+069	San Juan Bautista CCD                                                                     	6051	2	10,95
+069	San Benito-Bitterwater CCD                                                                	720	3	1,30
+071	San Bernardino CCD                                                                        	807147	1	39,66
+071	Ontario CCD                                                                               	615598	2	30,25
+071	Victorville-Hesperia CCD                                                                  	370441	3	18,20
+071	Twentynine Palms-Yucca Valley CCD                                                         	69860	4	3,43
+071	Yucaipa CCD                                                                               	51787	5	2,54
+071	Barstow CCD                                                                               	41257	6	2,03
+071	Big Bear CCD                                                                              	25635	7	1,26
+071	Lake Arrowhead CCD                                                                        	24757	8	1,22
+071	Newberry Springs-Baker CCD                                                                	12696	9	0,62
+071	Needles CCD                                                                               	7006	10	0,34
+071	Mount Baldy-Wrightwood CCD                                                                	6852	11	0,34
+071	Searles Valley CCD                                                                        	2174	12	0,11
+073	San Diego CCD                                                                             	2259481	1	73,00
+073	Oceanside-Escondido CCD                                                                   	627851	2	20,28
+073	Fallbrook CCD                                                                             	47304	3	1,53
+073	Camp Pendleton CCD                                                                        	37452	4	1,21
+073	Ramona CCD                                                                                	34870	5	1,13
+073	Valley Center CCD                                                                         	23330	6	0,75
+073	Jamul CCD                                                                                 	18958	7	0,61
+073	Alpine CCD                                                                                	15035	8	0,49
+073	Mountain Empire CCD                                                                       	7589	9	0,25
+073	Pauma Valley CCD                                                                          	7458	10	0,24
+073	Palomar-Julian CCD                                                                        	6267	11	0,20
+073	Laguna-Pine Valley CCD                                                                    	5278	12	0,17
+073	Borrego Springs CCD                                                                       	4440	13	0,14
+075	San Francisco CCD                                                                         	805235	1	100,00
+077	Stockton CCD                                                                              	343203	1	50,08
+077	Tracy CCD                                                                                 	106253	2	15,50
+077	Manteca CCD                                                                               	93456	3	13,64
+077	Lodi CCD                                                                                  	82378	4	12,02
+077	Ripon CCD                                                                                 	16688	5	2,44
+077	Escalon CCD                                                                               	13320	6	1,94
+077	Thornton CCD                                                                              	13225	7	1,93
+077	Lockeford CCD                                                                             	11360	8	1,66
+077	Linden-Farmington CCD                                                                     	5423	9	0,79
+079	Arroyo Grande CCD                                                                         	76029	1	28,20
+079	San Luis Obispo CCD                                                                       	64447	2	23,90
+079	Paso Robles CCD                                                                           	49131	3	18,22
+079	Atascadero CCD                                                                            	44512	4	16,51
+079	North Coast CCD                                                                           	35518	5	13,17
+081	San Mateo CCD                                                                             	383442	1	53,37
+081	South San Francisco CCD                                                                   	306115	2	42,61
+081	Half Moon Bay CCD                                                                         	28894	3	4,02
+083	Santa Barbara CCD                                                                         	184449	1	43,51
+083	Santa Maria CCD                                                                           	132726	2	31,31
+083	Lompoc CCD                                                                                	57742	3	13,62
+083	Solvang-Santa Ynez CCD                                                                    	22670	4	5,35
+083	Carpinteria CCD                                                                           	17718	5	4,18
+083	Guadalupe CCD                                                                             	7345	6	1,73
+083	Cuyama CCD                                                                                	1245	7	0,29
+085	San Jose CCD                                                                              	1661105	1	93,23
+085	South Santa Clara Valley CCD                                                              	103477	2	5,81
+085	West Santa Clara CCD                                                                      	7529	3	0,42
+085	Llagas-Uvas CCD                                                                           	4014	4	0,23
+085	Lexington Hills CCD                                                                       	4009	5	0,23
+085	Diablo Range CCD                                                                          	1508	6	0,08
+087	Santa Cruz CCD                                                                            	154331	1	58,82
+087	Watsonville CCD                                                                           	77150	2	29,40
+087	San Lorenzo Valley CCD                                                                    	23195	3	8,84
+087	West Santa Cruz CCD                                                                       	4283	4	1,63
+087	Summit Road CCD                                                                           	3423	5	1,30
+089	Redding CCD                                                                               	152644	1	86,13
+089	Central Shasta CCD                                                                        	11527	2	6,50
+089	East Shasta CCD                                                                           	7475	3	4,22
+089	Southwest Shasta CCD                                                                      	4100	4	2,31
+089	Sacramento Canyon CCD                                                                     	1477	5	0,83
+091	East Sierra CCD                                                                           	2336	1	72,10
+091	West Sierra CCD                                                                           	904	2	27,90
+093	Yreka CCD                                                                                 	11523	1	25,66
+093	Weed CCD                                                                                  	7231	2	16,10
+093	Mount Shasta CCD                                                                          	6991	3	15,57
+093	Montague CCD                                                                              	4105	4	9,14
+093	Etna CCD                                                                                  	3412	5	7,60
+093	Dunsmuir CCD                                                                              	2175	6	4,84
+093	Happy Camp CCD                                                                            	2142	7	4,77
+093	Butte Valley CCD                                                                          	1955	8	4,35
+093	Fort Jones CCD                                                                            	1847	9	4,11
+093	Tulelake CCD                                                                              	1458	10	3,25
+093	McCloud-Medicine Lake CCD                                                                 	1409	11	3,14
+093	Hornbrook-Hilt CCD                                                                        	652	12	1,45
+095	Vallejo CCD                                                                               	144838	1	35,04
+095	Fairfield-Suisun City CCD                                                                 	138815	2	33,58
+095	Vacaville CCD                                                                             	100015	3	24,20
+095	Dixon CCD                                                                                 	21253	4	5,14
+095	Rio Vista CCD                                                                             	8423	5	2,04
+097	Santa Rosa CCD                                                                            	209745	1	43,35
+097	Petaluma CCD                                                                              	125304	2	25,90
+097	Healdsburg CCD                                                                            	44548	3	9,21
+097	Sonoma CCD                                                                                	40608	4	8,39
+097	Sebastopol CCD                                                                            	27312	5	5,64
+097	Russian River-Sonoma Coast CCD                                                            	22713	6	4,69
+097	Cloverdale-Geyserville CCD                                                                	13648	7	2,82
+099	Modesto CCD                                                                               	312842	1	60,81
+099	Turlock CCD                                                                               	82457	2	16,03
+099	Oakdale CCD                                                                               	30054	3	5,84
+099	Patterson CCD                                                                             	26139	4	5,08
+099	Salida CCD                                                                                	19467	5	3,78
+099	Waterford CCD                                                                             	14800	6	2,88
+099	Hughson CCD                                                                               	12373	7	2,41
+099	Newman CCD                                                                                	12321	8	2,39
+099	Westport CCD                                                                              	4000	9	0,78
+101	Yuba City CCD                                                                             	74141	1	78,26
+101	Live Oak CCD                                                                              	10563	2	11,15
+101	Sutter CCD                                                                                	3460	3	3,65
+101	South Sutter CCD                                                                          	2551	4	2,69
+101	Yuba City Southwest CCD                                                                   	2461	5	2,60
+101	Meridian-Robbins CCD                                                                      	1561	6	1,65
+103	Red Bluff CCD                                                                             	40361	1	63,60
+103	Corning CCD                                                                               	14698	2	23,16
+103	West Tehama CCD                                                                           	4515	3	7,11
+103	East Tehama CCD                                                                           	3889	4	6,13
+105	Weaverville CCD                                                                           	7425	1	53,86
+105	Hayfork CCD                                                                               	3105	2	22,52
+105	Northwest Trinity CCD                                                                     	2281	3	16,55
+105	Mad River CCD                                                                             	975	4	7,07
+107	Visalia CCD                                                                               	135978	1	30,75
+107	Porterville CCD                                                                           	73297	2	16,58
+107	Tulare CCD                                                                                	68347	3	15,46
+107	Dinuba CCD                                                                                	32456	4	7,34
+107	Exeter CCD                                                                                	28089	5	6,35
+107	Orosi-Cutler CCD                                                                          	18269	6	4,13
+107	Lindsay CCD                                                                               	16952	7	3,83
+107	Earlimart CCD                                                                             	15152	8	3,43
+107	Woodlake-Three Rivers CCD                                                                 	13168	9	2,98
+107	Strathmore CCD                                                                            	7837	10	1,77
+107	Ivanhoe CCD                                                                               	7416	11	1,68
+107	Terra Bella CCD                                                                           	6628	12	1,50
+107	Pixley CCD                                                                                	6529	13	1,48
+107	Tipton CCD                                                                                	6446	14	1,46
+107	Springville-Johnsondale CCD                                                               	5615	15	1,27
+109	Sonora CCD                                                                                	20126	1	36,35
+109	Twain Harte-Tuolumne City CCD                                                             	16825	2	30,39
+109	East Sonora-Phoenix Lake CCD                                                              	13490	3	24,37
+109	Groveland CCD                                                                             	4924	4	8,89
+111	Oxnard CCD                                                                                	234919	1	28,53
+111	Thousand Oaks CCD                                                                         	158803	2	19,29
+111	Simi Valley CCD                                                                           	128981	3	15,67
+111	Ventura CCD                                                                               	111889	4	13,59
+111	Camarillo CCD                                                                             	66953	5	8,13
+111	Moorpark CCD                                                                              	35924	6	4,36
+111	Santa Paula CCD                                                                           	32060	7	3,89
+111	Ojai-Mira Monte CCD                                                                       	27784	8	3,37
+111	Fillmore CCD                                                                              	19488	9	2,37
+111	Las Posas CCD                                                                             	3768	10	0,46
+111	Triunfo Pass-Point Mugu CCD                                                               	1930	11	0,23
+111	Los Padres CCD                                                                            	819	12	0,10
+113	Davis CCD                                                                                 	74334	1	37,01
+113	Woodland CCD                                                                              	58695	2	29,22
+113	East Yolo CCD                                                                             	48921	3	24,36
+113	Winters CCD                                                                               	8106	4	4,04
+113	Esparto CCD                                                                               	5325	5	2,65
+113	Knights Landing CCD                                                                       	4193	6	2,09
+113	Clarksburg CCD                                                                            	1275	7	0,63
+115	Olivehurst CCD                                                                            	21120	1	29,27
+115	Linda CCD                                                                                 	17602	2	24,39
+115	Marysville CCD                                                                            	12382	3	17,16
+115	Marysville Northeast CCD                                                                  	7357	4	10,20
+115	Yuba Foothills CCD                                                                        	4941	5	6,85
+115	East Yuba-Beale AFB CCD                                                                   	4520	6	6,26
+115	Wheatland CCD                                                                             	4233	7	5,87

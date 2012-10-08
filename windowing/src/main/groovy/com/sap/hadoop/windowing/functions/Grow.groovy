@@ -47,8 +47,9 @@ import java.sql.Timestamp
 
 
 @FunctionDef(
-	name = "forecastDriver",
-	description="""Forecast Driver is a forecasting specific version of Driver that uses a single driver. It calculates the forecast for future periods using historical data and a single driver. It shows the incremental effect of the driver on the historical base figure. The forecast is based on the ratio of the driver value at a future time to the driver value for a base period. The base period is defined as the last period containing historical data, namely the period before the switchover date.
+	name = "grow",
+	description="""The Grow Business Function grows a base figure by a specified percentage each period. It can be compound or linear.
+	result column "grow" returns the calculated growth for the period.
 """,
 	supportsWindow = false,
 	args = [
@@ -56,40 +57,38 @@ import java.sql.Timestamp
 			description="""switchover definition. Can be a date, the string "today", or empty (treats all periods as historic)
 """
 		),
-	@ArgDef(name="driverColumnName", typeName="string", argTypes = [ArgType.STRING],
-		description="""name of the column that stores the driver (for example count, squaremeter, amount)
-"""
-	),
 	@ArgDef(name="periodColumnName", typeName="string", argTypes = [ArgType.STRING],
-		description="""name of the column that stores the period (for example date)
+			description="""name of the column that stores the period (for example date)"""
+	),
+	@ArgDef(name="baseColumnName", typeName="string", argTypes = [ArgType.STRING],
+		description="""name of the column that stores the prime
 """
 	),
-	@ArgDef(name="valueColumnName", typeName="string", argTypes = [ArgType.STRING],
-		description="""name of the column that stores the value (for example cost, time)
+	@ArgDef(name="growthRateColumnName", typeName="string", argTypes = [ArgType.STRING],
+		description="""name of the column that stores the growth rate
+"""
+	),
+	@ArgDef(name="growthType", typeName="string", argTypes = [ArgType.STRING],
+		description="""can either be "Linear" or "Compound".
 """
 	)
 	
 		])
 
-public class ForecastDriver extends AbstractTableFunction{
+public class Grow extends AbstractTableFunction{
 	
 	Configuration cfg
 	String switchover
-	String driverColumnName
+	String growthRateColumnName
+	String growthType
+	String baseColumnName
 	String periodColumnName
-	String valueColumnName
-	static double slope;
-	static double c;
 	Map<String, TypeInfo> typemap;
-	
-	
-	static double valueperdriver = 0;
-	static def pastDrivers = [:];
-	static double forecastDriver = 0;
-	static double forecastValue = 0;
+	Double growResult;
 	Date switchover_date;
 	Date long_date;
-	double last_historic_value = 0;
+	double last_historic_base = 0;
+	double last_grow;
 	
 	@Override
 	protected IPartition execute(IPartition inpPart) throws WindowingException {
@@ -102,64 +101,50 @@ public class ForecastDriver extends AbstractTableFunction{
 		 switchover_date = getSwitchOverDate();
 		}
 	
-		
+		//loop through all rows in inPart
 		for(Row r in inpPart){
 
-			def driver = r."$driverColumnName"
+			def base = r."$baseColumnName"
 			long long_date = (new Double(r."$periodColumnName")).longValue();
 			//Timestamp period = r."$periodColumnName"
-			def value  = r."$valueColumnName"
+			Double growthrate  = r."$growthRateColumnName"
 			Timestamp period = new Timestamp(long_date*1000L)
 			
 			
 		
-		//make a date out of period information
-		//Date period = new Date(((Integer.parseInt(string_period.substring(1, 4)))-1900),((Integer.parseInt(string_period.substring(6, 7)))-1),(Integer.parseInt(string_period.substring(9, 10))))
-			
-		//if period is in the past, define value per 1 driver. put the date value pair to the pastDrivers Map
+ 
+			//check if period is in the past
 			//Long switchover_date_ts = (switchover_date/1000L);
 			if(period<switchover_date){
 				
-			try{
-			valueperdriver = value/driver
-			}
-			catch(NullPointerException e){
-				valueperdriver = 0}
-
-			pastDrivers.(""+((period).getTime()/(1000L*60L*60L*24L))) = driver
-			last_historic_value = value;
+			//in past periods grow = base
+			growResult = base;
+			//update last_historic_base and last_grow, which are needed to calculate grow in future periods
+			last_historic_base = base;
+			last_grow = base;
 			}else{
-		//if period is in the future, check if driver is filled and calculate forecastValue,
-		//else, forecast driver and value
-		
-				if(driver){
-					forecastValue = forecastValue(driver, valueperdriver)
-					value = forecastValue
+		    //future period
+			//calculate grow
+				if(growthType.equalsIgnoreCase("linear")){
+					growResult = (last_historic_base*growthrate)+last_grow;
+					last_grow = growResult;
+					
 			}
-				else{
-					forecastDriver = forecastDriver(pastDrivers, period)
-					forecastValue = forecastValue(forecastDriver, valueperdriver)
-					driver = forecastDriver
-					value = forecastValue
+				else if(growthType.equalsIgnoreCase("compound")){
+					growResult = (last_grow*(1+growthrate));
+					last_grow = growResult;
 					
 			}
 					
 			}
 			
-			double effect = value - last_historic_value;
 			//create output partition and add the row to result table
 			def res = []
 			typemap.each { entry ->
 		
 				switch(entry.key) {
-				case ("$driverColumnName"):
-					res << driver
-					break
-				case ("$valueColumnName"):
-					res << value
-					break
-				case ("effect"):
-					res << effect
+				case ("grow"):
+					res << growResult
 					break
 				break
 				default:
@@ -177,51 +162,6 @@ public class ForecastDriver extends AbstractTableFunction{
 		return op;
 	}
 	
-	protected double forecastValue(double driver, double valueperdriver) {
-		
-		def forecast = driver*valueperdriver
-		return forecast
-		
-	}
-	
-	protected Double forecastDriver(Map pastDrivers, Date period){
-		
-
-		
-		//use linear regression to determine the value for the given period
-        // first pass: compute xbar and ybar
-		if(!slope){
-        double sumx = 0.0, sumy = 0.0, sumx2 = 0.0;
-        
-        pastDrivers.each { entry -> 
-            sumy += entry.value  
-            sumx += Double.parseDouble( entry.key )
-            sumx2 +=  Double.parseDouble( entry.key ) *  Double.parseDouble( entry.key )
-            }
-            
-        double xbar = sumx / pastDrivers.size();
-        double ybar = sumy / pastDrivers.size();        
-        // second pass: compute summary statistics
-        double xxbar = 0.0, yybar = 0.0, xybar = 0.0;
-        
-        pastDrivers.each { entry ->
-            xxbar += ((Double.parseDouble( entry.key ) - xbar)* ((Double.parseDouble( entry.key ) - xbar)))
-            xybar += ((Double.parseDouble( entry.key )  - xbar)* (entry.value - xbar))
-            }
-        
-         slope = xybar / xxbar;
-         c = ybar - slope * xbar;
-
-        // slope and c are interpreted like this: "y   =  slope*x + c);
-		}
-		if(pastDrivers.size()<2){
-			slope = 0;
-			c = Double.parseDouble( pastDrivers[0].value );
-			}
-		return (((period.getTime()/(1000L*60L*60L*24L))*slope)+c)
-		
-	}
-	
 	
 	protected void completeTranslation(GroovyShell wshell, Query qry, FuncSpec funcSpec) throws WindowingException
 	{
@@ -231,7 +171,7 @@ public class ForecastDriver extends AbstractTableFunction{
 			qry.input.columns.each { Column c ->
 				typemap[c.field.fieldName] = TypeInfoUtils.getTypeInfoFromObjectInspector(c.field.fieldObjectInspector)
 	
-			}	//add effect to typemap
+			}	
 
 				
 			
@@ -243,8 +183,9 @@ public class ForecastDriver extends AbstractTableFunction{
 			typemap.addAll( ((AbstractTableFunction)input).getOutputShape());
 		}
 		
+		//add grow to typemap
 		TypeInfo ti = TypeInfoFactory.getPrimitiveTypeInfo("double")
-		typemap["effect"] = ti
+		typemap["grow"] = ti
 		cfg = qry.cfg
 	}
 	
@@ -258,6 +199,7 @@ public class ForecastDriver extends AbstractTableFunction{
 			}
 		
 		if(switchover.equalsIgnoreCase("today")){
+		//if switchover is today, return todays date
 			
 			def switchover_date = new Date()
 			return(switchover_date)
@@ -265,16 +207,12 @@ public class ForecastDriver extends AbstractTableFunction{
 		//check if switchover is valid date and return 
 		try{
 		Date switchover_date = new Date(((Integer.parseInt(switchover.substring(0, 4))-1900)),((Integer.parseInt(switchover.substring(5, 7)))-1),(Integer.parseInt(switchover.substring(8, 10))));
-		//println((Integer.parseInt(switchover.substring(0, 4))-1900));
-		//println((Integer.parseInt(switchover.substring(5, 7)))-1);
-		//println(Integer.parseInt(switchover.substring(8, 10)));
-		//println(switchover_date);
+
 		return switchover_date;
 		}
 		catch(Exception e){
 		}
 		
-		//if switchover is today, return todays date
 
 		
 

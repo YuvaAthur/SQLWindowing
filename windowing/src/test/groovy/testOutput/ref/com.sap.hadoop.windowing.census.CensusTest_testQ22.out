@@ -1,0 +1,114 @@
+001	Oakland CCD                                                                               	411480	1
+001	Hayward CCD                                                                               	366577	2
+003	Markleeville CCD                                                                          	1175	1
+005	Ione CCD                                                                                  	12380	1
+005	Pine Grove-Silver Lake CCD                                                                	9604	2
+007	Chico CCD                                                                                 	100826	1
+007	Paradise CCD                                                                              	46200	2
+009	San Andreas CCD                                                                           	21999	1
+009	Angels City CCD                                                                           	12943	2
+011	Central Colusa CCD                                                                        	11838	1
+011	East Colusa CCD                                                                           	8798	2
+013	Central Contra Costa CCD                                                                  	471183	1
+013	West Contra Costa CCD                                                                     	245523	2
+015	Crescent City CCD                                                                         	23582	1
+015	Smith River-Gasquet CCD                                                                   	3655	2
+017	South El Dorado CCD                                                                       	102407	1
+017	North El Dorado CCD                                                                       	31207	2
+019	Fresno CCD                                                                                	664000	1
+019	Sanger CCD                                                                                	34895	2
+021	Orland CCD                                                                                	17598	1
+021	Willows CCD                                                                               	10524	2
+023	Eureka CCD                                                                                	48424	1
+023	Arcata CCD                                                                                	23495	2
+025	El Centro CCD                                                                             	62179	1
+025	Calexico CCD                                                                              	39216	2
+027	Bishop CCD                                                                                	12600	1
+027	Lone Pine CCD                                                                             	2613	2
+029	Bakersfield CCD                                                                           	393778	1
+029	East Kern CCD                                                                             	78648	2
+031	Hanford CCD                                                                               	67210	1
+031	Lemoore CCD                                                                               	36350	2
+033	Clearlake CCD                                                                             	15849	1
+033	Lakeport CCD                                                                              	9420	2
+035	Susanville CCD                                                                            	26758	1
+035	Honey Lake CCD                                                                            	3781	2
+037	Los Angeles CCD                                                                           	2504251	1
+037	San Fernando Valley CCD                                                                   	1771545	2
+039	Madera CCD                                                                                	92437	1
+039	Chowchilla CCD                                                                            	23371	2
+041	San Rafael CCD                                                                            	70235	1
+041	Ross Valley CCD                                                                           	58738	2
+043	Mariposa CCD                                                                              	13097	1
+043	Coulterville CCD                                                                          	3352	2
+045	Ukiah CCD                                                                                 	27163	1
+045	Willits CCD                                                                               	13120	2
+047	Merced CCD                                                                                	99537	1
+047	Atwater CCD                                                                               	48839	2
+049	Alturas CCD                                                                               	6511	1
+049	Surprise Valley CCD                                                                       	1265	2
+051	Mammoth Lakes CCD                                                                         	12117	1
+051	North Mono CCD                                                                            	2085	2
+053	Salinas CCD                                                                               	163203	1
+053	Seaside-Monterey CCD                                                                      	107513	2
+055	Napa CCD                                                                                  	115175	1
+055	St. Helena CCD                                                                            	7682	2
+057	Grass Valley CCD                                                                          	66614	1
+057	Donner CCD                                                                                	16912	2
+059	Anaheim-Santa Ana-Garden Grove CCD                                                        	1648519	1
+059	North Coast CCD                                                                           	366151	2
+061	Roseville CCD                                                                             	115374	1
+061	Rocklin CCD                                                                               	85223	2
+063	Quincy CCD                                                                                	6661	1
+063	Portola CCD                                                                               	4760	2
+065	Riverside CCD                                                                             	456130	1
+065	Murrieta CCD                                                                              	282939	2
+067	Sacramento CCD                                                                            	1072790	1
+067	Elk Grove CCD                                                                             	113863	2
+069	Hollister CCD                                                                             	48498	1
+069	San Juan Bautista CCD                                                                     	6051	2
+071	San Bernardino CCD                                                                        	807147	1
+071	Ontario CCD                                                                               	615598	2
+073	San Diego CCD                                                                             	2259481	1
+073	Oceanside-Escondido CCD                                                                   	627851	2
+075	San Francisco CCD                                                                         	805235	1
+077	Stockton CCD                                                                              	343203	1
+077	Tracy CCD                                                                                 	106253	2
+079	Arroyo Grande CCD                                                                         	76029	1
+079	San Luis Obispo CCD                                                                       	64447	2
+081	San Mateo CCD                                                                             	383442	1
+081	South San Francisco CCD                                                                   	306115	2
+083	Santa Barbara CCD                                                                         	184449	1
+083	Santa Maria CCD                                                                           	132726	2
+085	San Jose CCD                                                                              	1661105	1
+085	South Santa Clara Valley CCD                                                              	103477	2
+087	Santa Cruz CCD                                                                            	154331	1
+087	Watsonville CCD                                                                           	77150	2
+089	Redding CCD                                                                               	152644	1
+089	Central Shasta CCD                                                                        	11527	2
+091	East Sierra CCD                                                                           	2336	1
+091	West Sierra CCD                                                                           	904	2
+093	Yreka CCD                                                                                 	11523	1
+093	Weed CCD                                                                                  	7231	2
+095	Vallejo CCD                                                                               	144838	1
+095	Fairfield-Suisun City CCD                                                                 	138815	2
+097	Santa Rosa CCD                                                                            	209745	1
+097	Petaluma CCD                                                                              	125304	2
+099	Modesto CCD                                                                               	312842	1
+099	Turlock CCD                                                                               	82457	2
+101	Yuba City CCD                                                                             	74141	1
+101	Live Oak CCD                                                                              	10563	2
+103	Red Bluff CCD                                                                             	40361	1
+103	Corning CCD                                                                               	14698	2
+105	Weaverville CCD                                                                           	7425	1
+105	Hayfork CCD                                                                               	3105	2
+107	Visalia CCD                                                                               	135978	1
+107	Porterville CCD                                                                           	73297	2
+109	Sonora CCD                                                                                	20126	1
+109	Twain Harte-Tuolumne City CCD                                                             	16825	2
+111	Oxnard CCD                                                                                	234919	1
+111	Thousand Oaks CCD                                                                         	158803	2
+113	Davis CCD                                                                                 	74334	1
+113	Woodland CCD                                                                              	58695	2
+115	Olivehurst CCD                                                                            	21120	1
+115	Linda CCD                                                                                 	17602	2

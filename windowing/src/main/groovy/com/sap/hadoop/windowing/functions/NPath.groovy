@@ -129,7 +129,7 @@ class NPath extends AbstractTableFunction
 		rowContext = new NRowContext(symbols : [])
 				
 		// setup Path from pattern
-		String[] nds = pattern.split("\\.")
+		String[] nds = pattern.split("\\.") 
 		NNode rootNode = null
 		NNode currNode = null
 		NNode n = null

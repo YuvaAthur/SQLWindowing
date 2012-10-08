@@ -6,9 +6,9 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.ExpectedException
 
-import com.sap.hadoop.windowing.BaseTest
+import com.sap.hadoop.windowing.MRBaseTest
 
-class ForecastDualDriverTest extends BaseTest 
+class ForecastDualDriverTest extends MRBaseTest 
 {
 	@Rule
 	public ExpectedException expectedEx = ExpectedException.none();

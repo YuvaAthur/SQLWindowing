@@ -16,7 +16,7 @@ class FlightsTest extends MRBaseTest
    @Test
    void testQ1()
    {
-	   wshell.execute("""
+	   testExecute("""
 	   from <select origin_city_name, year, month, day_of_month, dep_time 
              from flightsdata 
              where dest_city_name = 'New York' and dep_time != '' and day_of_week = 1>
@@ -37,7 +37,7 @@ class FlightsTest extends MRBaseTest
    @Test
    void testQ2()
    {
-	   wshell.execute("""
+	   testExecute("""
 	   from <select origin_city_name, year, month, day_of_month, arr_delay, fl_num
 			 from flightsdata
 			 where dest_city_name = 'New York' and dep_time != ''>
@@ -71,7 +71,7 @@ class FlightsTest extends MRBaseTest
    @Test
    void testQ3()
    {
-	   wshell.execute("""
+	   testExecute("""
 	   from <select * from (select unique_carrier, fl_num, year, month, day_of_month, CRS_ARR_TIME as t, arr_delay as delay, 1 as flight
       from flightsdata
       where  dest_city_name = 'New York' and dep_time != '' and arr_delay is not null
@@ -98,7 +98,7 @@ class FlightsTest extends MRBaseTest
   @Test
   void testNPath()
   {
-	  wshell.execute("""
+	  testExecute("""
 	  from npath(<select origin_city_name, year, month, day_of_month, arr_delay, fl_num
 			from flightsdata
 			where dest_city_name = 'New York' and dep_time != ''>

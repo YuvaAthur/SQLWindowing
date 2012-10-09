@@ -80,5 +80,6 @@ class FunctionRegistry
 		registerTableClass(ForecastDriver.class)
 		registerTableClass(ForecastDualDriver.class)
 		registerTableClass(Grow.class) 
+		registerTableClass(Feed.class)
 	}
 }	
